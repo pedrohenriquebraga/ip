@@ -28,6 +28,16 @@ int identificaOperador(char op) {
   }
 }
 
+void printIntOuDouble(double x) {
+  long int intX = (int) x;
+
+  if (intX == x) {
+    printf("%ld\n", intX);
+  } else {
+    printf("%.1f\n", x);
+  }
+}
+
 void calculaRelacoes(char op, double x, double y) {
   if (op == '=') {
     if (x == y) {
@@ -60,17 +70,17 @@ void calculaAritmetica(char op, double x, double y) {
   switch (op) {
     case '+':
       double soma = x + y;
-      printf("%.1lf\n", soma);
+      printIntOuDouble(soma);
       break;
 
     case '-':
       double sub = x - y;
-      printf("%.1lf\n", sub);
+      printIntOuDouble(sub);
       break;
 
     case '*':
       double mult = x * y;
-      printf("%.1lf\n", mult);
+      printIntOuDouble(mult);
       break;
 
     case '/':
@@ -78,7 +88,7 @@ void calculaAritmetica(char op, double x, double y) {
         printf("Divisao por zero nao existe\n");
       } else {
         double div = x / y;
-        printf("%.1lf\n", div);
+        printIntOuDouble(div);
       }
       break;
 
