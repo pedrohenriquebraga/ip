@@ -1,3 +1,8 @@
 .vscode
 builds
 main
+
+# Ignora arquivos sem extensão
+*
+!*/
+!*.*
