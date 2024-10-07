@@ -29,12 +29,12 @@ int identificaOperador(char op) {
 }
 
 void printIntOuDouble(double x) {
-  long int intX = (int) x;
+  long int intX = (long int) x;
 
   if (intX == x) {
     printf("%ld\n", intX);
   } else {
-    printf("%.1f\n", x);
+    printf("%g\n", x);
   }
 }
 
