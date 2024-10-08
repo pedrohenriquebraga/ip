@@ -129,9 +129,6 @@ void calculaLogica(char op, double x, double y) {
 int main() {
   double x, y;
   char op;
-  
-
-  scanf("%lf%c%lf", &x, &op, &y);
 
   if(scanf("%lf", &x) == 1)
   { else { 
