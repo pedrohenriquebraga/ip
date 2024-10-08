@@ -129,8 +129,16 @@ void calculaLogica(char op, double x, double y) {
 int main() {
   double x, y;
   char op;
+  
 
   scanf("%lf%c%lf", &x, &op, &y);
+
+  if(scanf("%lf", &x) == 1)
+  { else { 
+   scanf("%c%lf", &op, &y);     
+   printf("true\n"); 
+   return 0;
+   }
 
   int opIdentificado = identificaOperador(op);
 
