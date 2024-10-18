@@ -6,25 +6,21 @@
  * @return o valor aproximado da constante pi
  */
 double compute_pi( int n ) {
-  int numerador, denominador, i, cont;
+  int i;
+  double num = 2, den = 1;
   double res = 2;
 
-  numerador = 2;
-  denominador = 3;
-  cont = 1;
-
-  for (i = 1; i <= n; i++) {
-    if (cont >= 2) {
-      numerador += 2;
-      denominador += 2;
-      cont = 0;
+  for (i = 1; i < n; i++) {
+    if (i % 2 == 0) {
+      num += 2;
+    } else {
+      den += 2;
     }
 
-    res *= numerador / denominador;
-    cont++;
+    res *= num / den;
   }
 
-  return res;
+  return res * 2;
 }
 
 int main() {
