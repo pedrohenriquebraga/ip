@@ -22,7 +22,7 @@ int main() {
         count += leds[num - 1];
       }
 
-      *ch++;
+      ch++;
     }
 
     printf("%lu leds\n", count);
