@@ -1,9 +1,10 @@
-.vscode
-builds
-main
-
 # Ignora arquivos sem extensão
 *
 !*/
 !*.*
-problems/.vscode/tasks.json
+**/.vscode/*
+
+.vscode
+builds
+
+*.pgm
