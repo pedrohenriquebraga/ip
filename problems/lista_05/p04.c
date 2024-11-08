@@ -8,9 +8,9 @@ int main()
   int _l, _c;
   double matriz[N][N], a, b, c, d;
 
-  for (_l = 0; _l < 2; _l++)
+  for (_l = 0; _l < N; _l++)
   {
-    for (_c = 0; _c < 2; _c++)
+    for (_c = 0; _c < N; _c++)
     {
       scanf("%lf", &matriz[_l][_c]);
     }
